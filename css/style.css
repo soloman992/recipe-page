@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f7ede3;
+    color: #4a2d1f;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.recipe-image img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-content {
+    padding: 20px;
+}
+
+.recipe-content h1 {
+    font-size: 2.5em;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    color: #4a2d1f;
+}
+
+.recipe-content p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #6b4e3d;
+    margin-bottom: 20px;
+}
+
+.prep-time h2, .ingredients h2, .instructions h2, .nutrition h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #a4522d;
+}
+
+.prep-time ul, .ingredients ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.prep-time ul li, .ingredients ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.instructions ol {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.instructions ol li {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.instructions ol li strong {
+    color: #a4522d;
+}
+
+.nutrition table {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.nutrition table tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+.nutrition table tr td {
+    padding: 8px 0;
+    color: #6b4e3d;
+}
+
+.nutrition table tr td:nth-child(2) {
+    font-weight: bold;
+    color: #d15335;
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 768px) {
+    .recipe-content {
+        padding: 15px;
+    }
+
+    .recipe-content h1 {
+        font-size: 2em;
+    }
+
+    .recipe-content p {
+        font-size: 1em;
+    }
+
+    .prep-time h2, .ingredients h2, .instructions h2, .nutrition h2 {
+        font-size: 1.4em;
+    }
+
+    .prep-time ul li, .ingredients ul li, .instructions ol li, .nutrition table tr td {
+        font-size: 1em;
+    }
+}
